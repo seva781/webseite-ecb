@@ -493,13 +493,18 @@ h1 {
     font-size: 0.82rem;
   }
 
-  .lang-switch {
-    flex: 0 0 auto;
+  nav a:not([href="#contact"]) {
+    display: none;
   }
 
-  .lang-switch button {
-    padding: 0.25rem 0.42rem;
-    font-size: 0.72rem;
+  nav a[href="#contact"] {
+    padding: 0.36rem 0.62rem;
+    background: #111827;
+    color: #ffffff;
+  }
+
+  .lang-switch {
+    display: none;
   }
 
   .hero-wrap {
