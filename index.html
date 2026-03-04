@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Entrepreneur Club Bern</title>
+    <meta
+      id="meta-description"
+      name="description"
+      content="Der Entrepreneur Club Bern verbindet junge Gründerinnen und Gründer, die ihr Startup starten oder weiterentwickeln wollen."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="#top">Entrepreneur Club Bern</a>
+        <nav>
+          <a href="#about" data-i18n="nav.about">About</a>
+          <a href="#team" data-i18n="nav.team">Team</a>
+          <a href="#events" data-i18n="nav.events">Events</a>
+          <a href="#contact" data-i18n="nav.contact">Kontakt</a>
+          <div class="lang-switch" role="group" aria-label="Language switcher">
+            <button type="button" data-lang-btn="de" class="is-active">DE</button>
+            <button type="button" data-lang-btn="en">EN</button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero-wrap">
+        <div class="hero container">
+          <div class="hero-copy">
+            <p class="eyebrow" data-i18n="hero.eyebrow">For founders in Bern</p>
+            <h1 data-i18n="hero.title">Launch smarter. Build faster.</h1>
+            <p data-i18n="hero.text">
+              Der Entrepreneur Club Bern ist die Community für junge Gründerinnen
+              und Gründer, die ihr Startup starten oder in der frühen Phase
+              skalieren wollen.
+            </p>
+            <div class="hero-actions">
+              <a class="cta" href="#events" data-i18n="hero.ctaPrimary">Events ansehen</a>
+              <a class="ghost-btn" href="#contact" data-i18n="hero.ctaSecondary">Mitmachen</a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <img src="assets/logo.png" alt="Entrepreneur Club Bern Logo" class="logo" />
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section container">
+        <div class="section-head">
+          <p class="eyebrow" data-i18n="about.eyebrow">About us</p>
+          <h2 data-i18n="about.title">Wir bauen ein starkes Startup-Netzwerk in Bern.</h2>
+        </div>
+        <div class="about-grid">
+          <article class="feature-card">
+            <h3 data-i18n="about.card1Title">Was wir sind</h3>
+            <p data-i18n="about.card1Text">
+              Ein moderner Club für ambitionierte Unternehmerinnen und Unternehmer,
+              die Ideen in echte Produkte und Unternehmen verwandeln.
+            </p>
+          </article>
+          <article class="feature-card">
+            <h3 data-i18n="about.card2Title">Unsere Mission</h3>
+            <p data-i18n="about.card2Text">
+              Wir schaffen einen Ort für Austausch, ehrliches Feedback und
+              praxisnahes Wissen, damit mehr Startups in Bern erfolgreich starten.
+            </p>
+          </article>
+          <article class="feature-card">
+            <h3 data-i18n="about.card3Title">Fokus</h3>
+            <p data-i18n="about.card3Text">
+              Community, Events, Mentoring und Umsetzung - speziell für die ersten
+              Schritte von der Idee bis zum ersten Wachstum.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="events" class="section container">
+        <div class="section-head">
+          <p class="eyebrow" data-i18n="events.eyebrow">Events</p>
+          <h2 data-i18n="events.title">Anstehende Events</h2>
+        </div>
+        <div class="event-list">
+          <details class="event-item">
+            <summary>
+              <span>
+                <strong>Founder Kickoff Night</strong>
+                <small data-i18n="events.e1Date">18. März 2026, 18:30 Uhr</small>
+              </span>
+              <em data-i18n="events.details">Details</em>
+            </summary>
+            <div class="event-content">
+              <p data-i18n="events.location1">Location: Impact Hub Bern</p>
+              <p data-i18n="events.e1Text">
+                Networking für neue Mitglieder, kurze Pitch-Runde und Q&amp;A mit
+                Gründerinnen und Gründern aus der Region.
+              </p>
+            </div>
+          </details>
+
+          <details class="event-item">
+            <summary>
+              <span>
+                <strong>Lean Startup Workshop</strong>
+                <small data-i18n="events.e2Date">08. April 2026, 17:30 Uhr</small>
+              </span>
+              <em data-i18n="events.details">Details</em>
+            </summary>
+            <div class="event-content">
+              <p data-i18n="events.location2">Location: Uni Bern, StartLab</p>
+              <p data-i18n="events.e2Text">
+                Hands-on Workshop: Problem/Solution Fit, MVP-Plan und erste
+                Validierungsschritte für Frühphasen-Teams.
+              </p>
+            </div>
+          </details>
+
+          <details class="event-item">
+            <summary>
+              <span>
+                <strong>Investor Q&amp;A</strong>
+                <small data-i18n="events.e3Date">30. April 2026, 19:00 Uhr</small>
+              </span>
+              <em data-i18n="events.details">Details</em>
+            </summary>
+            <div class="event-content">
+              <p data-i18n="events.location3">Location: Bundesplatz Bern (Club Room)</p>
+              <p data-i18n="events.e3Text">
+                Offene Fragenrunde mit Business Angels: Finanzierung, KPIs,
+                Storytelling im Pitch und typische Fehler am Anfang.
+              </p>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <section id="team" class="section container">
+        <div class="section-head">
+          <p class="eyebrow" data-i18n="team.eyebrow">Team</p>
+          <h2 data-i18n="team.title">Das Team hinter dem Entrepreneur Club Bern</h2>
+        </div>
+        <div class="cards team-cards">
+          <article class="card">
+            <h3>Benjamin Willen</h3>
+            <p data-i18n="team.role">Core Team</p>
+          </article>
+          <article class="card">
+            <h3>Nathalie</h3>
+            <p data-i18n="team.role">Core Team</p>
+          </article>
+          <article class="card">
+            <h3>Seva Yevdokimov</h3>
+            <p data-i18n="team.role">Core Team</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section container">
+        <div class="section-head">
+          <p class="eyebrow" data-i18n="contact.eyebrow">Kontakt</p>
+          <h2 data-i18n="contact.title">Interesse am Club? Schreib uns.</h2>
+        </div>
+        <form class="contact-form" action="#" method="post">
+          <label for="name" data-i18n="contact.nameLabel">Name</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            placeholder="Dein Name"
+            data-i18n-placeholder="contact.namePlaceholder"
+            required
+          />
+
+          <label for="email" data-i18n="contact.emailLabel">E-Mail</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="dein.name@email.com"
+            data-i18n-placeholder="contact.emailPlaceholder"
+            required
+          />
+
+          <label for="message" data-i18n="contact.messageLabel">Nachricht</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Erzähl uns kurz, was du aufbauen willst."
+            data-i18n-placeholder="contact.messagePlaceholder"
+            required
+          ></textarea>
+
+          <button type="submit" data-i18n="contact.submit">Nachricht senden</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-inner">
+          <p data-i18n="footer.club">Entrepreneur Club Bern</p>
+          <a
+            class="insta-link"
+            href="https://www.instagram.com/entrepreneurship_club_bern/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram vom Entrepreneur Club Bern"
+            data-i18n-aria-label="footer.instaAria"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 1.8A3.7 3.7 0 0 0 3.8 7.5v9a3.7 3.7 0 0 0 3.7 3.7h9a3.7 3.7 0 0 0 3.7-3.7v-9a3.7 3.7 0 0 0-3.7-3.7h-9Zm9.5 1.3a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.8a3.2 3.2 0 1 0 0 6.4 3.2 3.2 0 0 0 0-6.4Z"
+              />
+            </svg>
+            <span>@entrepreneurship_club_bern</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const translations = {
+        de: {
+          metaDescription:
+            "Der Entrepreneur Club Bern verbindet junge Gründerinnen und Gründer, die ihr Startup starten oder weiterentwickeln wollen.",
+          "nav.about": "About",
+          "nav.team": "Team",
+          "nav.events": "Events",
+          "nav.contact": "Kontakt",
+          "hero.eyebrow": "For founders in Bern",
+          "hero.title": "Launch smarter. Build faster.",
+          "hero.text":
+            "Der Entrepreneur Club Bern ist die Community für junge Gründerinnen und Gründer, die ihr Startup starten oder in der frühen Phase skalieren wollen.",
+          "hero.ctaPrimary": "Events ansehen",
+          "hero.ctaSecondary": "Mitmachen",
+          "about.eyebrow": "About us",
+          "about.title": "Wir bauen ein starkes Startup-Netzwerk in Bern.",
+          "about.card1Title": "Was wir sind",
+          "about.card1Text":
+            "Ein moderner Club für ambitionierte Unternehmerinnen und Unternehmer, die Ideen in echte Produkte und Unternehmen verwandeln.",
+          "about.card2Title": "Unsere Mission",
+          "about.card2Text":
+            "Wir schaffen einen Ort für Austausch, ehrliches Feedback und praxisnahes Wissen, damit mehr Startups in Bern erfolgreich starten.",
+          "about.card3Title": "Fokus",
+          "about.card3Text":
+            "Community, Events, Mentoring und Umsetzung - speziell für die ersten Schritte von der Idee bis zum ersten Wachstum.",
+          "team.eyebrow": "Team",
+          "team.title": "Das Team hinter dem Entrepreneur Club Bern",
+          "team.role": "Core Team",
+          "events.eyebrow": "Events",
+          "events.title": "Anstehende Events",
+          "events.details": "Details",
+          "events.e1Date": "18. März 2026, 18:30 Uhr",
+          "events.location1": "Ort: Impact Hub Bern",
+          "events.e1Text":
+            "Networking für neue Mitglieder, kurze Pitch-Runde und Q&A mit Gründerinnen und Gründern aus der Region.",
+          "events.e2Date": "08. April 2026, 17:30 Uhr",
+          "events.location2": "Ort: Uni Bern, StartLab",
+          "events.e2Text":
+            "Hands-on Workshop: Problem/Solution Fit, MVP-Plan und erste Validierungsschritte für Frühphasen-Teams.",
+          "events.e3Date": "30. April 2026, 19:00 Uhr",
+          "events.location3": "Ort: Bundesplatz Bern (Club Room)",
+          "events.e3Text":
+            "Offene Fragenrunde mit Business Angels: Finanzierung, KPIs, Storytelling im Pitch und typische Fehler am Anfang.",
+          "contact.eyebrow": "Kontakt",
+          "contact.title": "Interesse am Club? Schreib uns.",
+          "contact.nameLabel": "Name",
+          "contact.namePlaceholder": "Dein Name",
+          "contact.emailLabel": "E-Mail",
+          "contact.emailPlaceholder": "dein.name@email.com",
+          "contact.messageLabel": "Nachricht",
+          "contact.messagePlaceholder": "Erzähl uns kurz, was du aufbauen willst.",
+          "contact.submit": "Nachricht senden",
+          "footer.club": "Entrepreneur Club Bern",
+          "footer.instaAria": "Instagram vom Entrepreneur Club Bern"
+        },
+        en: {
+          metaDescription:
+            "Entrepreneur Club Bern connects young founders who want to launch or grow their startup.",
+          "nav.about": "About",
+          "nav.team": "Team",
+          "nav.events": "Events",
+          "nav.contact": "Contact",
+          "hero.eyebrow": "For founders in Bern",
+          "hero.title": "Launch smarter. Build faster.",
+          "hero.text":
+            "Entrepreneur Club Bern is the community for young founders who want to launch their startup or scale in the early stage.",
+          "hero.ctaPrimary": "View events",
+          "hero.ctaSecondary": "Join us",
+          "about.eyebrow": "About us",
+          "about.title": "We build a strong startup network in Bern.",
+          "about.card1Title": "Who we are",
+          "about.card1Text":
+            "A modern club for ambitious entrepreneurs turning ideas into real products and companies.",
+          "about.card2Title": "Our mission",
+          "about.card2Text":
+            "We create a place for exchange, honest feedback, and practical knowledge so more startups can launch successfully in Bern.",
+          "about.card3Title": "Focus",
+          "about.card3Text":
+            "Community, events, mentoring, and execution - tailored to the first steps from idea to early traction.",
+          "team.eyebrow": "Team",
+          "team.title": "The team behind Entrepreneur Club Bern",
+          "team.role": "Core Team",
+          "events.eyebrow": "Events",
+          "events.title": "Upcoming events",
+          "events.details": "Details",
+          "events.e1Date": "March 18, 2026, 6:30 PM",
+          "events.location1": "Location: Impact Hub Bern",
+          "events.e1Text":
+            "Networking for new members, short pitch round, and Q&A with founders from the region.",
+          "events.e2Date": "April 08, 2026, 5:30 PM",
+          "events.location2": "Location: Uni Bern, StartLab",
+          "events.e2Text":
+            "Hands-on workshop: problem/solution fit, MVP planning, and first validation steps for early-stage teams.",
+          "events.e3Date": "April 30, 2026, 7:00 PM",
+          "events.location3": "Location: Bundesplatz Bern (Club Room)",
+          "events.e3Text":
+            "Open Q&A with business angels: funding, KPIs, pitch storytelling, and common early-stage mistakes.",
+          "contact.eyebrow": "Contact",
+          "contact.title": "Interested in the club? Send us a message.",
+          "contact.nameLabel": "Name",
+          "contact.namePlaceholder": "Your name",
+          "contact.emailLabel": "Email",
+          "contact.emailPlaceholder": "your.name@email.com",
+          "contact.messageLabel": "Message",
+          "contact.messagePlaceholder": "Tell us briefly what you want to build.",
+          "contact.submit": "Send message",
+          "footer.club": "Entrepreneur Club Bern",
+          "footer.instaAria": "Instagram of Entrepreneur Club Bern"
+        }
+      };
+
+      function applyLanguage(lang) {
+        const selected = translations[lang] ? lang : "de";
+        document.documentElement.lang = selected;
+        localStorage.setItem("ecb_lang", selected);
+
+        const dict = translations[selected];
+        const metaDescription = document.getElementById("meta-description");
+        if (metaDescription && dict.metaDescription) {
+          metaDescription.setAttribute("content", dict.metaDescription);
+        }
+
+        document.querySelectorAll("[data-i18n]").forEach((element) => {
+          const key = element.getAttribute("data-i18n");
+          if (key && dict[key]) {
+            element.textContent = dict[key];
+          }
+        });
+
+        document.querySelectorAll("[data-i18n-placeholder]").forEach((element) => {
+          const key = element.getAttribute("data-i18n-placeholder");
+          if (key && dict[key]) {
+            element.setAttribute("placeholder", dict[key]);
+          }
+        });
+
+        document.querySelectorAll("[data-i18n-aria-label]").forEach((element) => {
+          const key = element.getAttribute("data-i18n-aria-label");
+          if (key && dict[key]) {
+            element.setAttribute("aria-label", dict[key]);
+          }
+        });
+
+        document.querySelectorAll("[data-lang-btn]").forEach((button) => {
+          button.classList.toggle("is-active", button.getAttribute("data-lang-btn") === selected);
+        });
+      }
+
+      document.querySelectorAll("[data-lang-btn]").forEach((button) => {
+        button.addEventListener("click", () => {
+          applyLanguage(button.getAttribute("data-lang-btn"));
+        });
+      });
+
+      const savedLanguage = localStorage.getItem("ecb_lang");
+      const browserLanguage = navigator.language && navigator.language.startsWith("en") ? "en" : "de";
+      applyLanguage(savedLanguage || browserLanguage);
+    </script>
+  </body>
+</html>
