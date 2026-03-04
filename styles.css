@@ -464,14 +464,42 @@ h1 {
 
 @media (max-width: 680px) {
   .nav {
-    flex-direction: column;
-    gap: 0.45rem;
-    min-height: 82px;
-    padding: 0.5rem 0;
+    flex-direction: row;
+    min-height: 64px;
+    padding: 0.4rem 0;
+    gap: 0.5rem;
   }
 
   nav {
-    justify-content: center;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    gap: 0.3rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .brand {
+    white-space: nowrap;
+    font-size: 0.86rem;
+  }
+
+  nav a {
+    white-space: nowrap;
+    padding: 0.3rem 0.5rem;
+    font-size: 0.82rem;
+  }
+
+  .lang-switch {
+    flex: 0 0 auto;
+  }
+
+  .lang-switch button {
+    padding: 0.25rem 0.42rem;
+    font-size: 0.72rem;
   }
 
   .hero-wrap {
