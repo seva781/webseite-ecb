@@ -223,9 +223,8 @@
               <span>@entrepreneurship_club_bern</span>
             </a>
             <a
-              class="social-link linkedin-link app-link"
+              class="social-link linkedin-link"
               href="https://www.linkedin.com/company/entrepreneurship-club-bern/posts/?feedView=all"
-              data-app-url="linkedin://company/entrepreneurship-club-bern"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn vom Entrepreneur Club Bern"
@@ -426,33 +425,9 @@
         });
       });
 
-      function setupAppDeepLinks() {
-        const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-        if (!isMobile) return;
-
-        document.querySelectorAll(".app-link[data-app-url]").forEach((link) => {
-          link.addEventListener("click", (event) => {
-            const appUrl = link.getAttribute("data-app-url");
-            if (!appUrl) return;
-
-            event.preventDefault();
-            const webUrl = link.href;
-            const openedAt = Date.now();
-            window.location.href = appUrl;
-
-            setTimeout(() => {
-              if (Date.now() - openedAt < 1700) {
-                window.location.href = webUrl;
-              }
-            }, 1200);
-          });
-        });
-      }
-
       const savedLanguage = localStorage.getItem("ecb_lang");
       const browserLanguage = navigator.language && navigator.language.startsWith("en") ? "en" : "de";
       applyLanguage(savedLanguage || browserLanguage);
-      setupAppDeepLinks();
     </script>
   </body>
 </html>
