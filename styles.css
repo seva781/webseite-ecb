@@ -298,6 +298,60 @@ h1 {
   font-size: 0.94rem;
 }
 
+.past-events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin-top: 1.2rem;
+}
+
+.past-event-card {
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  overflow: hidden;
+  background: var(--panel);
+  box-shadow: var(--shadow);
+}
+
+.past-event-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.past-event-content {
+  padding: 0.95rem 1rem 1.05rem;
+}
+
+.past-event-content h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1rem;
+}
+
+.past-event-content p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.93rem;
+}
+
+.whatsapp-link {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 1.1rem;
+  text-decoration: none;
+  color: #0f8f57;
+  font-weight: 560;
+  border: 1px solid #b7e6cf;
+  background: #f4fdf8;
+  border-radius: 999px;
+  padding: 0.55rem 0.88rem;
+}
+
+.whatsapp-link:hover {
+  background: #e9f9f1;
+}
+
 .contact-form {
   margin-top: 1.2rem;
   padding: 1.15rem;

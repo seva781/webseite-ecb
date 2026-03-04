@@ -19,6 +19,7 @@
           <a href="#about" data-i18n="nav.about">About</a>
           <a href="#team" data-i18n="nav.team">Team</a>
           <a href="#events" data-i18n="nav.events">Events</a>
+          <a href="#past-events" data-i18n="nav.pastEvents">Vergangene</a>
           <a href="#contact" data-i18n="nav.contact">Kontakt</a>
           <div class="lang-switch" role="group" aria-label="Language switcher">
             <button type="button" data-lang-btn="de" class="is-active">DE</button>
@@ -89,53 +90,55 @@
           <details class="event-item">
             <summary>
               <span>
-                <strong>Founder Kickoff Night</strong>
-                <small data-i18n="events.e1Date">18. März 2026, 18:30 Uhr</small>
+                <strong data-i18n="events.e1Title">Founder Sprint Evening</strong>
+                <small data-i18n="events.e1Date">01. April 2026, 18:30 Uhr</small>
               </span>
               <em data-i18n="events.details">Details</em>
             </summary>
             <div class="event-content">
-              <p data-i18n="events.location1">Location: Impact Hub Bern</p>
+              <p data-i18n="events.location1">Ort: Bern, genaue Location folgt</p>
               <p data-i18n="events.e1Text">
-                Networking für neue Mitglieder, kurze Pitch-Runde und Q&amp;A mit
-                Gründerinnen und Gründern aus der Region.
+                Intensiver Abend für Gründerinnen und Gründer: ehrliches Feedback zu
+                Ideen, schnelle Mini-Pitches und Networking mit anderen Early-Stage Teams.
               </p>
             </div>
           </details>
+        </div>
+      </section>
 
-          <details class="event-item">
-            <summary>
-              <span>
-                <strong>Lean Startup Workshop</strong>
-                <small data-i18n="events.e2Date">08. April 2026, 17:30 Uhr</small>
-              </span>
-              <em data-i18n="events.details">Details</em>
-            </summary>
-            <div class="event-content">
-              <p data-i18n="events.location2">Location: Uni Bern, StartLab</p>
-              <p data-i18n="events.e2Text">
-                Hands-on Workshop: Problem/Solution Fit, MVP-Plan und erste
-                Validierungsschritte für Frühphasen-Teams.
+      <section id="past-events" class="section container">
+        <div class="section-head">
+          <p class="eyebrow" data-i18n="pastEvents.eyebrow">Recap</p>
+          <h2 data-i18n="pastEvents.title">Vergangene Events</h2>
+        </div>
+        <div class="past-events-grid">
+          <article class="past-event-card">
+            <img src="assets/events/past-event-1.png" alt="Networking Event Entrepreneur Club Bern" />
+            <div class="past-event-content">
+              <h3 data-i18n="pastEvents.item1Title">Networking Evening</h3>
+              <p data-i18n="pastEvents.item1Text">
+                Lockere Gespräche, neue Kontakte und konkrete Startup-Impulse in Bern.
               </p>
             </div>
-          </details>
-
-          <details class="event-item">
-            <summary>
-              <span>
-                <strong>Investor Q&amp;A</strong>
-                <small data-i18n="events.e3Date">30. April 2026, 19:00 Uhr</small>
-              </span>
-              <em data-i18n="events.details">Details</em>
-            </summary>
-            <div class="event-content">
-              <p data-i18n="events.location3">Location: Bundesplatz Bern (Club Room)</p>
-              <p data-i18n="events.e3Text">
-                Offene Fragenrunde mit Business Angels: Finanzierung, KPIs,
-                Storytelling im Pitch und typische Fehler am Anfang.
+          </article>
+          <article class="past-event-card">
+            <img src="assets/events/past-event-2.png" alt="Community Event Entrepreneur Club Bern" />
+            <div class="past-event-content">
+              <h3 data-i18n="pastEvents.item2Title">Community Meetup</h3>
+              <p data-i18n="pastEvents.item2Text">
+                Austausch mit Gründerinnen und Gründern aus unterschiedlichen Branchen.
               </p>
             </div>
-          </details>
+          </article>
+          <article class="past-event-card">
+            <img src="assets/events/past-event-3.png" alt="Startup Event Entrepreneur Club Bern" />
+            <div class="past-event-content">
+              <h3 data-i18n="pastEvents.item3Title">Startup Exchange</h3>
+              <p data-i18n="pastEvents.item3Text">
+                Volle Räume, spannende Gespräche und viel Motivation für die nächsten Schritte.
+              </p>
+            </div>
+          </article>
         </div>
       </section>
 
@@ -165,6 +168,16 @@
           <p class="eyebrow" data-i18n="contact.eyebrow">Kontakt</p>
           <h2 data-i18n="contact.title">Interesse am Club? Schreib uns.</h2>
         </div>
+        <a
+          class="whatsapp-link"
+          href="https://wa.me/41782239151"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-i18n="contact.whatsapp"
+          aria-label="Via WhatsApp an Nathalie schreiben"
+          data-i18n-aria-label="contact.whatsappAria"
+          >WhatsApp: Nathalie direkt schreiben (+41 78 223 91 51)</a
+        >
         <form class="contact-form" action="#" method="post">
           <label for="name" data-i18n="contact.nameLabel">Name</label>
           <input
@@ -231,6 +244,7 @@
           "nav.about": "About",
           "nav.team": "Team",
           "nav.events": "Events",
+          "nav.pastEvents": "Vergangene",
           "nav.contact": "Kontakt",
           "hero.eyebrow": "For founders in Bern",
           "hero.title": "Launch smarter. Build faster.",
@@ -255,20 +269,26 @@
           "events.eyebrow": "Events",
           "events.title": "Anstehende Events",
           "events.details": "Details",
-          "events.e1Date": "18. März 2026, 18:30 Uhr",
-          "events.location1": "Ort: Impact Hub Bern",
+          "events.e1Title": "Founder Sprint Evening",
+          "events.e1Date": "01. April 2026, 18:30 Uhr",
+          "events.location1": "Ort: Bern, genaue Location folgt",
           "events.e1Text":
-            "Networking für neue Mitglieder, kurze Pitch-Runde und Q&A mit Gründerinnen und Gründern aus der Region.",
-          "events.e2Date": "08. April 2026, 17:30 Uhr",
-          "events.location2": "Ort: Uni Bern, StartLab",
-          "events.e2Text":
-            "Hands-on Workshop: Problem/Solution Fit, MVP-Plan und erste Validierungsschritte für Frühphasen-Teams.",
-          "events.e3Date": "30. April 2026, 19:00 Uhr",
-          "events.location3": "Ort: Bundesplatz Bern (Club Room)",
-          "events.e3Text":
-            "Offene Fragenrunde mit Business Angels: Finanzierung, KPIs, Storytelling im Pitch und typische Fehler am Anfang.",
+            "Intensiver Abend für Gründerinnen und Gründer: ehrliches Feedback zu Ideen, schnelle Mini-Pitches und Networking mit anderen Early-Stage Teams.",
+          "pastEvents.eyebrow": "Recap",
+          "pastEvents.title": "Vergangene Events",
+          "pastEvents.item1Title": "Networking Evening",
+          "pastEvents.item1Text":
+            "Lockere Gespräche, neue Kontakte und konkrete Startup-Impulse in Bern.",
+          "pastEvents.item2Title": "Community Meetup",
+          "pastEvents.item2Text":
+            "Austausch mit Gründerinnen und Gründern aus unterschiedlichen Branchen.",
+          "pastEvents.item3Title": "Startup Exchange",
+          "pastEvents.item3Text":
+            "Volle Räume, spannende Gespräche und viel Motivation für die nächsten Schritte.",
           "contact.eyebrow": "Kontakt",
           "contact.title": "Interesse am Club? Schreib uns.",
+          "contact.whatsapp": "WhatsApp: Nathalie direkt schreiben (+41 78 223 91 51)",
+          "contact.whatsappAria": "Via WhatsApp an Nathalie schreiben",
           "contact.nameLabel": "Name",
           "contact.namePlaceholder": "Dein Name",
           "contact.emailLabel": "E-Mail",
@@ -285,6 +305,7 @@
           "nav.about": "About",
           "nav.team": "Team",
           "nav.events": "Events",
+          "nav.pastEvents": "Past events",
           "nav.contact": "Contact",
           "hero.eyebrow": "For founders in Bern",
           "hero.title": "Launch smarter. Build faster.",
@@ -309,20 +330,26 @@
           "events.eyebrow": "Events",
           "events.title": "Upcoming events",
           "events.details": "Details",
-          "events.e1Date": "March 18, 2026, 6:30 PM",
-          "events.location1": "Location: Impact Hub Bern",
+          "events.e1Title": "Founder Sprint Evening",
+          "events.e1Date": "April 01, 2026, 6:30 PM",
+          "events.location1": "Location: Bern, exact location coming soon",
           "events.e1Text":
-            "Networking for new members, short pitch round, and Q&A with founders from the region.",
-          "events.e2Date": "April 08, 2026, 5:30 PM",
-          "events.location2": "Location: Uni Bern, StartLab",
-          "events.e2Text":
-            "Hands-on workshop: problem/solution fit, MVP planning, and first validation steps for early-stage teams.",
-          "events.e3Date": "April 30, 2026, 7:00 PM",
-          "events.location3": "Location: Bundesplatz Bern (Club Room)",
-          "events.e3Text":
-            "Open Q&A with business angels: funding, KPIs, pitch storytelling, and common early-stage mistakes.",
+            "An intensive founder evening with honest idea feedback, quick mini-pitches, and networking with other early-stage teams.",
+          "pastEvents.eyebrow": "Recap",
+          "pastEvents.title": "Past events",
+          "pastEvents.item1Title": "Networking Evening",
+          "pastEvents.item1Text":
+            "Relaxed conversations, new connections, and concrete startup insights in Bern.",
+          "pastEvents.item2Title": "Community Meetup",
+          "pastEvents.item2Text":
+            "Exchange with founders from different industries and backgrounds.",
+          "pastEvents.item3Title": "Startup Exchange",
+          "pastEvents.item3Text":
+            "Packed rooms, inspiring conversations, and momentum for the next steps.",
           "contact.eyebrow": "Contact",
           "contact.title": "Interested in the club? Send us a message.",
+          "contact.whatsapp": "WhatsApp: message Nathalie directly (+41 78 223 91 51)",
+          "contact.whatsappAria": "Write to Nathalie via WhatsApp",
           "contact.nameLabel": "Name",
           "contact.namePlaceholder": "Your name",
           "contact.emailLabel": "Email",
