@@ -213,8 +213,7 @@ h1 {
 
 .feature-card,
 .card,
-.event-item,
-.contact-form {
+.event-item {
   border: 1px solid var(--line);
   border-radius: 18px;
   background: var(--panel);
@@ -393,6 +392,25 @@ h1 {
   background: #e9efff;
 }
 
+.impressum-section {
+  padding-top: 2.4rem;
+}
+
+.impressum-card {
+  margin-top: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--panel);
+  box-shadow: var(--shadow);
+  padding: 1rem 1.1rem;
+}
+
+.impressum-card p {
+  margin: 0.3rem 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
 .site-footer {
   border-top: 1px solid var(--line);
   margin-top: 2.4rem;
@@ -413,7 +431,14 @@ h1 {
   padding: 1.2rem 0 1.75rem;
 }
 
-.insta-link {
+.footer-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  flex-wrap: wrap;
+}
+
+.social-link {
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
@@ -428,16 +453,33 @@ h1 {
   transition: color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.insta-link svg {
+.social-link svg {
   width: 18px;
   height: 18px;
   fill: currentColor;
 }
 
-.insta-link:hover {
+.social-link:hover {
   color: #111827;
   transform: translateY(-1px);
   box-shadow: 0 8px 18px rgba(15, 23, 42, 0.09);
+}
+
+.linkedin-link {
+  color: #1d4fa3;
+}
+
+.impressum-link {
+  text-decoration: none;
+  color: #5a6070;
+  font-size: 0.89rem;
+  font-weight: 560;
+  padding: 0.3rem 0.45rem;
+  border-radius: 8px;
+}
+
+.impressum-link:hover {
+  background: rgba(15, 23, 42, 0.05);
 }
 
 @media (max-width: 860px) {
@@ -515,5 +557,9 @@ h1 {
     flex-direction: column;
     align-items: flex-start;
     padding-bottom: 1.45rem;
+  }
+
+  .footer-actions {
+    width: 100%;
   }
 }

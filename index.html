@@ -199,27 +199,47 @@
           >
         </div>
       </section>
+
     </main>
 
     <footer class="site-footer">
       <div class="container">
         <div class="footer-inner">
           <p data-i18n="footer.club">Entrepreneur Club Bern</p>
-          <a
-            class="insta-link"
-            href="https://www.instagram.com/entrepreneurship_club_bern/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Instagram vom Entrepreneur Club Bern"
-            data-i18n-aria-label="footer.instaAria"
-          >
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path
-                d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 1.8A3.7 3.7 0 0 0 3.8 7.5v9a3.7 3.7 0 0 0 3.7 3.7h9a3.7 3.7 0 0 0 3.7-3.7v-9a3.7 3.7 0 0 0-3.7-3.7h-9Zm9.5 1.3a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.8a3.2 3.2 0 1 0 0 6.4 3.2 3.2 0 0 0 0-6.4Z"
-              />
-            </svg>
-            <span>@entrepreneurship_club_bern</span>
-          </a>
+          <div class="footer-actions">
+            <a
+              class="social-link insta-link"
+              href="https://www.instagram.com/entrepreneurship_club_bern/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram vom Entrepreneur Club Bern"
+              data-i18n-aria-label="footer.instaAria"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 1.8A3.7 3.7 0 0 0 3.8 7.5v9a3.7 3.7 0 0 0 3.7 3.7h9a3.7 3.7 0 0 0 3.7-3.7v-9a3.7 3.7 0 0 0-3.7-3.7h-9Zm9.5 1.3a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.8a3.2 3.2 0 1 0 0 6.4 3.2 3.2 0 0 0 0-6.4Z"
+                />
+              </svg>
+              <span>@entrepreneurship_club_bern</span>
+            </a>
+            <a
+              class="social-link linkedin-link app-link"
+              href="https://www.linkedin.com/company/entrepreneurship-club-bern/posts/?feedView=all"
+              data-app-url="linkedin://company/entrepreneurship-club-bern"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn vom Entrepreneur Club Bern"
+              data-i18n-aria-label="footer.linkedinAria"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M6.9 8.4a1.9 1.9 0 1 1 0-3.8 1.9 1.9 0 0 1 0 3.8ZM5.2 20V9.9h3.4V20H5.2Zm5.5 0V9.9H14v1.4h.1c.5-.9 1.6-1.8 3.4-1.8 3.1 0 3.7 2 3.7 4.7V20h-3.4v-5.1c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7V20h-3.4Z"
+                />
+              </svg>
+              <span data-i18n="footer.linkedinLabel">LinkedIn</span>
+            </a>
+            <a class="impressum-link" href="impressum.html" data-i18n="footer.impressum">Impressum</a>
+          </div>
         </div>
       </div>
     </footer>
@@ -288,7 +308,10 @@
           "contact.messagePlaceholder": "Erzähl uns kurz, was du aufbauen willst.",
           "contact.submit": "Nachricht senden",
           "footer.club": "Entrepreneur Club Bern",
-          "footer.instaAria": "Instagram vom Entrepreneur Club Bern"
+          "footer.instaAria": "Instagram vom Entrepreneur Club Bern",
+          "footer.linkedinAria": "LinkedIn vom Entrepreneur Club Bern",
+          "footer.linkedinLabel": "LinkedIn",
+          "footer.impressum": "Impressum"
         },
         en: {
           metaDescription:
@@ -353,7 +376,10 @@
           "contact.messagePlaceholder": "Tell us briefly what you want to build.",
           "contact.submit": "Send message",
           "footer.club": "Entrepreneur Club Bern",
-          "footer.instaAria": "Instagram of Entrepreneur Club Bern"
+          "footer.instaAria": "Instagram of Entrepreneur Club Bern",
+          "footer.linkedinAria": "LinkedIn of Entrepreneur Club Bern",
+          "footer.linkedinLabel": "LinkedIn",
+          "footer.impressum": "Legal notice"
         }
       };
 
@@ -400,9 +426,33 @@
         });
       });
 
+      function setupAppDeepLinks() {
+        const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+        if (!isMobile) return;
+
+        document.querySelectorAll(".app-link[data-app-url]").forEach((link) => {
+          link.addEventListener("click", (event) => {
+            const appUrl = link.getAttribute("data-app-url");
+            if (!appUrl) return;
+
+            event.preventDefault();
+            const webUrl = link.href;
+            const openedAt = Date.now();
+            window.location.href = appUrl;
+
+            setTimeout(() => {
+              if (Date.now() - openedAt < 1700) {
+                window.location.href = webUrl;
+              }
+            }, 1200);
+          });
+        });
+      }
+
       const savedLanguage = localStorage.getItem("ecb_lang");
       const browserLanguage = navigator.language && navigator.language.startsWith("en") ? "en" : "de";
       applyLanguage(savedLanguage || browserLanguage);
+      setupAppDeepLinks();
     </script>
   </body>
 </html>
