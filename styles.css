@@ -504,7 +504,13 @@ h1 {
   }
 
   .lang-switch {
-    display: none;
+    display: inline-flex;
+    flex: 0 0 auto;
+  }
+
+  .lang-switch button {
+    padding: 0.25rem 0.42rem;
+    font-size: 0.72rem;
   }
 
   .hero-wrap {
