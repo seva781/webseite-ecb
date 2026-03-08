@@ -343,6 +343,15 @@ h1 {
   max-width: 100%;
 }
 
+.update-actions {
+  margin-top: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  width: 100%;
+  max-width: 100%;
+}
+
 .whatsapp-link,
 .insta-dm-link {
   display: inline-flex;
@@ -361,6 +370,44 @@ h1 {
 
 .insta-dm-link:hover {
   background: #fceffd;
+}
+
+.newsletter-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 100%;
+  min-height: 46px;
+  color: #0f8f57;
+  font-weight: 560;
+  border: 1px solid #b7e6cf;
+  background: #f4fdf8;
+  border-radius: 999px;
+  padding: 0.55rem 0.88rem;
+}
+
+.newsletter-link:hover {
+  background: #e9f9f1;
+}
+
+.linkedin-update-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 100%;
+  min-height: 46px;
+  color: #1d4fa3;
+  font-weight: 560;
+  border: 1px solid #c5d4f9;
+  background: #f4f7ff;
+  border-radius: 999px;
+  padding: 0.55rem 0.88rem;
+}
+
+.linkedin-update-link:hover {
+  background: #e9efff;
 }
 
 .whatsapp-link {
