@@ -248,6 +248,17 @@ h1 {
   margin-top: 1.2rem;
 }
 
+.event-empty {
+  margin: 0;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--panel);
+  box-shadow: var(--shadow);
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+
 .event-item {
   overflow: hidden;
 }
